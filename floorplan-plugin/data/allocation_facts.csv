@@ -1,0 +1,199 @@
+section,destination,source_room,zone,category,sub_line,product,batch,units,cases,flag,expiration,med_rec,vendor_class
+Pick,BW,(B) Vault - Finished Goods,vault,Beverages,Beverage,MED - HI5 Seltzer - THC (100mg) - Pomegranate - 4pk,BEVP100T10,180.0,3.0,,2027-09-28,MED,Theory
+Pick,BW,(B) Vault - Finished Goods,vault,Chocolates,Chocolate,Chocolate Bar - THEORYb - 100mg - 20pk - Defect,CCHOC100T1,26.0,0.65,PARTIAL,2027-09-24,REC,Theory
+Pick,BW,(B) MIP Lab - Finished Goods,mip,Chocolates,Chocolate,Chocolate Bar - THEORYb - 100mg - 20pk - Defect,MCHOCKS100T23,35.0,0.88,PARTIAL,2027-09-16,REC,Theory
+Pick,BW,(B) Vault - Finished Goods,vault,Chocolates,Chocolate,Chocolate Bar - THEORYb - 1:1 Milk Chocolate - 20pk,MCHOC200O15,40.0,1.0,,2027-09-13,REC,Theory
+Pick,BW,(B) MIP Lab - Finished Goods,mip,Chocolates,Chocolate,Chocolate Bar - THEORYb - 1:1 Milk Chocolate - 20pk - Defect,MCHOC200O15,23.0,0.57,PARTIAL,2027-09-13,REC,Theory
+Pick,BW,(B) Vault - Finished Goods,vault,Chocolates,Chocolate,Chocolate Bar - THEORYb - THC Caramel Gold - 20pk,CCHOC100T1,40.0,1.0,,2027-09-24,REC,Theory
+Pick,BW,(B) Vault - Finished Goods,vault,Chocolates,Chocolate,MED - Chocolate Bar - 2000mg - 20pk - Defect,DCHOC2000T8,22.0,0.55,PARTIAL,2027-09-22,MED,Theory
+Pick,BW,(B) Vault - Finished Goods,vault,Chocolates,Chocolate,MED - Chocolate Bar - 2000mg THC Dark Chocolate - 20pk,DCHOC2000T8,80.0,2.0,,2027-09-22,MED,Theory
+Pick,BW,(B) Vault - Finished Goods,vault,Concentrates,1g Rosin,THEORYx Live Rosin 1g - Soap,SFSOAPLRO1,25.0,0.52,PARTIAL,2027-09-25,REC,Theory
+Pick,BW,(B) Vault - Finished Goods,vault,Flower,14g Flower,Flower 14g - THEORYb - Bandaid Haze IX 3.0,BNDH.4B.08062026001442,25.0,1.67,PARTIAL + EXCEEDS MAX,2027-09-04,REC,Theory
+Pick,BW,(B) Vault - Finished Goods,vault,Flower,28g Flower,Flower 28g - THEORYb - Bandaid Haze IX 3.0,BNDH.4B.08062026001444,15.0,1.0,EXCEEDS MAX,2027-09-04,REC,Theory
+Pick,BW,(B) Vault - Finished Goods,vault,Flower,3.5g Flower,Flower 3.5g - THEORYx - Irish Cannonball,IRCA.4A.051826001275,75.0,1.0,,2027-07-06,REC,Theory
+Pick,BW,(B) Vault - Finished Goods,vault,Gummies,Gummies,FX Chews - 10pk - Defect,FXCHEWS10O41,1.0,0.02,PARTIAL,2027-09-18,REC,Theory
+Pick,BW,(B) MIP Lab - Finished Goods,mip,Gummies,Gummies,MED - Chews - 100mg THC - Defect,CHEWPI100T46,1.0,0.02,PARTIAL,2027-09-25,MED,Theory
+Pick,BW,(B) Vault - Finished Goods,vault,Gummies,Gummies,MED - Chews - 100mg THC - Defect,ICHEWTM100T6,2.0,0.04,PARTIAL,2027-09-25,MED,Theory
+Pick,BW,(B) MIP Lab - Finished Goods,mip,Gummies,Gummies,MED - Chews - 100mg THC - Defect,SCHEWBR100T9,1.0,0.02,PARTIAL,2027-09-27,MED,Theory
+Pick,BW,(B) Vault - Finished Goods,vault,Gummies,Gummies,MED - THEORYb Gummies - THC Blue Raspberry (Sativa) (100mg) - 20pk,SCHEWBR100T8,100.0,2.0,,2027-09-16,MED,Theory
+Pick,BW,(B) Vault - Finished Goods,vault,Gummies,Gummies,Vegan Rosin Gummies - THC Sour Blue Raspberry - 10pk,LRCHEWSBR5T17,25.0,0.5,PARTIAL,2027-09-16,REC,Theory
+Pick,BW,(B) Vault - Finished Goods,vault,Preroll Multipacks,10pk Multipack Preroll,Preroll 10pk Minis - World Star,WOST.3B.51326001250,36.0,1.0,,2027-06-15,REC,Theory
+Pick,BW,(B) Vault - Finished Goods,vault,Preroll Multipacks,14pk Multipack Preroll,Preroll 14pk (0.5g) - Falcon Berry,FABE.2B.061726001315,100.0,2.0,,2027-07-17,REC,Theory
+Pick,BW,(B) Vault - Finished Goods,vault,Preroll Multipacks,14pk Multipack Preroll,Preroll 14pk (1g) - Shrimp Scampi,SRMP.2A.060126001305,14.0,0.56,PARTIAL,2027-07-13,REC,Theory
+Pick,BW,(B) Vault - Finished Goods,vault,Preroll Singles,.5g Preroll Singles,Preroll .5g - Mango Haze,MAHA.3A.41326004620,150.0,1.0,,2027-06-08,REC,Theory
+Pick,BW,(B) Vault - Finished Goods,vault,Preroll Singles,.5g Preroll Singles,Preroll .5g - THEORYx - Sunset Sherbert BX1,SUSH.3A.061526001344,150.0,1.0,,2027-08-03,REC,Theory
+Pick,BW,(B) Vault - Finished Goods,vault,Preroll Singles,.5g Preroll Singles,Preroll .5g - THEORYx - Sunshine Daydream BX1,SSDD.3A.061526004676,150.0,1.0,,2027-08-03,REC,Theory
+Pick,BW,(B) Vault - Finished Goods,vault,Preroll Singles,1g Blunt Singles,Blunt Cone 1g - THEORYx - Wedding Cake,WEDC.1A.062426001379,50.0,1.0,,2027-08-16,REC,Theory
+Pick,BW,(B) Vault - Finished Goods,vault,Topical,Topical,RSO - Muscle Lotion - CBD (X),RSO-TOPIM1200C4,32.0,1.0,EXCEEDS MAX,2027-09-25,REC,Theory
+Pick,Chicopee,(B) MIP Lab - Finished Goods,mip,Chocolates,Chocolate,Chocolate Bar - THEORYb - 1:1 Milk Chocolate - 20pk,MCHOC200O15,26.0,0.65,PARTIAL,2027-09-13,REC,Theory
+Pick,Chicopee,(B) Vault - Finished Goods,vault,Chocolates,Chocolate,Chocolate Bar - THEORYb - THC Caramel Gold - 20pk,CCHOC100T1,120.0,3.0,,2027-09-24,REC,Theory
+Pick,Chicopee,(B) Vault - Finished Goods,vault,Chocolates,Chocolate,Chocolate Bar - THEORYb - THC Kitchen Sink - 20pk,MCHOCKS100T23,40.0,1.0,,2027-09-16,REC,Theory
+Pick,Chicopee,(B) Vault - Finished Goods,vault,Chocolates,Chocolate,MED - Chocolate Bar - 2000mg THC Dark Chocolate - 20pk,DCHOC2000T8,80.0,2.0,,2027-09-22,MED,Theory
+Pick,Chicopee,(B) Vault - Finished Goods,vault,Chocolates,Chocolate,MED - Chocolate Bar - 2000mg THC Milk Chocolate - 20pk,MCHOC2000T14,40.0,1.0,,2027-08-18,MED,Theory
+Pick,Chicopee,(B) MIP Lab - Finished Goods,mip,Concentrates,1g BHO Concentrate,Sugar 1g - Lemon Fatman,PEBPLFATSU1,48.0,1.0,,2027-09-13,REC,Theory
+Pick,Chicopee,(B) Vault - Finished Goods,vault,Concentrates,1g Rosin,THEORYx Live Rosin 1g - Soap,SFSOAPLRO1,25.0,0.52,PARTIAL,2027-09-25,REC,Theory
+Pick,Chicopee,(B) Vault - Finished Goods,vault,Flower,14g Flower,Flower 14g - THEORYb - Bandaid Haze IX 3.0,BNDH.4B.08062026001442,30.0,2.0,,2027-09-04,REC,Theory
+Pick,Chicopee,(B) Vault - Finished Goods,vault,Flower,3.5g Flower,Flower 3.5g - THEORYb - Golden Tiger,GOLD.4B.08062026001458,75.0,1.0,EXCEEDS MAX,2027-09-18,REC,Theory
+Pick,Chicopee,(B) Vault - Finished Goods,vault,Flower,3.5g Flower,Flower 3.5g - THEORYb - Poutine,POUTPH05.2A.08032026001469,75.0,1.0,,2027-09-18,REC,Theory
+Pick,Chicopee,(B) Vault - Finished Goods,vault,Flower,3.5g Flower,Flower 3.5g - THEORYx - Irish Cannonball,IRCA.4A.051826001275,75.0,1.0,,2027-07-06,REC,Theory
+Pick,Chicopee,(B) Vault - Finished Goods,vault,Gummies,Gummies,FX Gummies - 1:1 Cherry Lime - 20pk,FXCHEWS10O41,200.0,4.0,,2027-09-18,REC,Theory
+Pick,Chicopee,(B) MIP Lab - Finished Goods,mip,Gummies,Gummies,THEORYb Gummies - THC Mango - 20pk,CHEWM5T87,150.0,3.0,,2027-10-04,REC,Theory
+Pick,Chicopee,(B) Vault - Finished Goods,vault,Gummies,Gummies,THEORYb Gummies - THC Mixed Berry (Indica) - 20pk,ICHEWMB5T17,50.0,1.0,,2027-08-11,REC,Theory
+Pick,Chicopee,(B) Vault - Finished Goods,vault,Gummies,Gummies,Vegan Rosin Gummies - THC Sour Blue Raspberry - 10pk,LRCHEWSBR5T17,25.0,0.5,PARTIAL,2027-09-16,REC,Theory
+Pick,Chicopee,(B) Vault - Finished Goods,vault,Preroll Multipacks,10pk Multipack Preroll,Preroll 10pk Minis - World Star,WOST.3B.51326001250,36.0,1.0,,2027-06-15,REC,Theory
+Pick,Chicopee,(B) Vault - Finished Goods,vault,Preroll Multipacks,14pk Multipack Preroll,Preroll 14pk (0.5g) - Falcon Berry,FABE.2B.061726001315,150.0,3.0,,2027-07-17,REC,Theory
+Pick,Chicopee,(B) Vault - Finished Goods,vault,Preroll Multipacks,14pk Multipack Preroll,Preroll 14pk (1g) - Shrimp Scampi,SRMP.2A.060126001305,25.0,1.0,,2027-07-13,REC,Theory
+Pick,Chicopee,(B) Vault - Finished Goods,vault,Preroll Singles,.5g Preroll Singles,Preroll .5g - Mango Haze,MAHA.3A.41326004620,150.0,1.0,EXCEEDS MAX,2027-06-08,REC,Theory
+Pick,Chicopee,(B) Vault - Finished Goods,vault,Preroll Singles,.5g Preroll Singles,Preroll .5g - THEORYx - Sunset Sherbert BX1,SUSH.3A.061526001344,150.0,1.0,,2027-08-03,REC,Theory
+Pick,Chicopee,(B) Vault - Finished Goods,vault,Preroll Singles,.5g Preroll Singles,Preroll .5g - THEORYx - Sunshine Daydream BX1,SSDD.3A.061526004676,150.0,1.0,,2027-08-03,REC,Theory
+Pick,Chicopee,(B) Vault - Finished Goods,vault,Preroll Singles,1g Blunt Singles,Blunt Cone 1g - THEORYx - Wedding Cake,WEDC.1A.062426001379,50.0,1.0,,2027-08-16,REC,Theory
+Pick,Chicopee,(B) Vault - Finished Goods,vault,Preroll Singles,1g Preroll Singles,Preroll 1g - Old Dirty Biker,OLDB.1B.22426001060,300.0,2.0,EXCEEDS MAX,2027-04-03,REC,Theory
+Pick,Chicopee,(B) Vault - Finished Goods,vault,Topical,Topical,RSO - Muscle Lotion - CBD (X),RSO-TOPIM1200C4,32.0,1.0,,2027-09-25,REC,Theory
+Pick,Chicopee,(D) Vault - Hold for Theory,vault,Beverages,Beverage,MED - HI5 Seltzer - THC (100mg) - Pomegranate - 4pk,BEVP100T10,120.0,2.0,,2027-09-28,MED,Theory
+Pick,GB,(B) Vault - Finished Goods,vault,Beverages,Beverage,HI5 Seltzer - THC - America - 4pk,BEVRP5T24,60.0,1.0,,2027-10-01,REC,Theory
+Pick,GB,(B) Vault - Finished Goods,vault,Beverages,Beverage,HI5 Seltzer - THC - Cranberry Lime - 4pk,BEVCL5T30,60.0,1.0,,,REC,Theory
+Pick,GB,(B) Vault - Finished Goods,vault,Beverages,Beverage,HI5 Soda - THC - Orange - 4pk,BEVSOO5T46,60.0,1.0,,2027-09-06,REC,Theory
+Pick,GB,(B) Vault - Finished Goods,vault,Chocolates,Chocolate,Chocolate Bar - THEORYb - 1:1 Milk Chocolate - 20pk,MCHOC200O15,40.0,1.0,,2027-09-13,REC,Theory
+Pick,GB,(B) Vault - Finished Goods,vault,Chocolates,Chocolate,Chocolate Bar - THEORYb - THC Caramel Gold - 20pk,CCHOC100T1,120.0,3.0,,2027-09-24,REC,Theory
+Pick,GB,(B) MIP Lab - Finished Goods,mip,Chocolates,Chocolate,Chocolate Bar - THEORYb - THC Kitchen Sink - 20pk,MCHOCKS100T23,16.0,0.4,PARTIAL,2027-09-16,REC,Theory
+Pick,GB,(B) MIP Lab - Finished Goods,mip,Concentrates,1g BHO Concentrate,Sugar 1g - Lemon Fatman,PEBPLFATSU1,48.0,1.0,,2027-09-13,REC,Theory
+Pick,GB,(B) Vault - Finished Goods,vault,Concentrates,1g Rosin,THEORYx Live Rosin 1g - Soap,SFSOAPLRO1,25.0,0.52,PARTIAL,2027-09-25,REC,Theory
+Pick,GB,(B) Vault - Finished Goods,vault,Flower,14g Flower,Flower 14g - THEORYb - Bandaid Haze IX 3.0,BNDH.4B.08062026001442,15.0,1.0,,2027-09-04,REC,Theory
+Pick,GB,(B) Vault - Finished Goods,vault,Flower,28g Flower,Flower 28g - THEORYb - Bandaid Haze IX 3.0,BNDH.4B.08062026001444,5.0,0.33,PARTIAL,2027-09-04,REC,Theory
+Pick,GB,(B) Vault - Finished Goods,vault,Flower,3.5g Flower,Flower 3.5g - THEORYb - Golden Tiger,GOLD.4B.08062026001458,75.0,1.0,EXCEEDS MAX,2027-09-18,REC,Theory
+Pick,GB,(B) Vault - Finished Goods,vault,Flower,3.5g Flower,Flower 3.5g - THEORYb - Poutine,POUTPH05.2A.08032026001469,75.0,1.0,EXCEEDS MAX,2027-09-18,REC,Theory
+Pick,GB,(B) Vault - Finished Goods,vault,Flower,3.5g Flower,Flower 3.5g - THEORYx - Irish Cannonball,IRCA.4A.051826001275,75.0,1.0,,2027-07-06,REC,Theory
+Pick,GB,(B) Vault - Finished Goods,vault,Gummies,Gummies,FX Gummies - 1:1 Cherry Lime - 20pk,FXCHEWS10O41,250.0,5.0,,2027-09-18,REC,Theory
+Pick,GB,(B) Vault - Finished Goods,vault,Gummies,Gummies,THEORYb Gummies - THC Mixed Berry (Indica) - 20pk,ICHEWMB5T17,50.0,1.0,,2027-08-11,REC,Theory
+Pick,GB,(B) Vault - Finished Goods,vault,Gummies,Gummies,Vegan Rosin Gummies - THC Sour Blue Raspberry - 10pk,LRCHEWSBR5T17,25.0,0.5,PARTIAL,2027-09-16,REC,Theory
+Pick,GB,(B) Vault - Finished Goods,vault,Preroll Multipacks,10pk Multipack Preroll,Preroll 10pk Minis - World Star,WOST.3B.51326001250,36.0,1.0,,2027-06-15,REC,Theory
+Pick,GB,(B) Vault - Finished Goods,vault,Preroll Multipacks,14pk Multipack Preroll,Preroll 14pk (0.5g) - Falcon Berry,FABE.2B.061726001315,150.0,3.0,,2027-07-17,REC,Theory
+Pick,GB,(B) Vault - Finished Goods,vault,Preroll Multipacks,14pk Multipack Preroll,Preroll 14pk (1g) - Shrimp Scampi,SRMP.2A.060126001305,25.0,1.0,,2027-07-13,REC,Theory
+Pick,GB,(B) Vault - Finished Goods,vault,Preroll Singles,.5g Preroll Singles,Preroll .5g - Mango Haze,MAHA.3A.41326004620,150.0,1.0,,2027-06-08,REC,Theory
+Pick,GB,(B) Vault - Finished Goods,vault,Preroll Singles,.5g Preroll Singles,Preroll .5g - THEORYx - Sunset Sherbert BX1,SUSH.3A.061526001344,150.0,1.0,,2027-08-03,REC,Theory
+Pick,GB,(B) Vault - Finished Goods,vault,Preroll Singles,.5g Preroll Singles,Preroll .5g - THEORYx - Sunshine Daydream BX1,SSDD.3A.061526004676,150.0,1.0,,2027-08-03,REC,Theory
+Pick,GB,(B) Vault - Finished Goods,vault,Preroll Singles,1g Blunt Singles,Blunt Cone 1g - Headband x Triangle Kush,HBTK.5A.31126001120,50.0,1.0,,2027-05-12,REC,Theory
+Pick,GB,(B) Vault - Finished Goods,vault,Preroll Singles,1g Blunt Singles,Blunt Cone 1g - THEORYx - Wedding Cake,WEDC.1A.062426001379,50.0,1.0,,2027-08-16,REC,Theory
+Pick,GB,(B) Vault - Finished Goods,vault,Preroll Singles,1g Blunt Singles,Blunt Cone 1g - World Star,WOST.3B.51326001250,150.0,3.0,,2027-06-15,REC,Theory
+Pick,GB,(B) Vault - Finished Goods,vault,Topical,Topical,RSO - Muscle Lotion - CBD (X),RSO-TOPIM1200C4,64.0,2.0,,2027-09-25,REC,Theory
+Pick,GB,(B) Vault - Finished Goods,vault,Vape Cartridges,1ml High Potency Vape,Vape Product - EHO Distillate High Potency Cartridge 1ml - Grapeade,VP1GRAPD1,60.0,1.0,,2027-09-09,REC,Theory
+Pick,Medford,(B) Vault - Finished Goods,vault,Beverages,Beverage,HI5 Seltzer - THC - Pomegranate - 4pk,BEVP5T86,120.0,2.0,,2027-09-25,REC,Theory
+Pick,Medford,(B) Vault - Finished Goods,vault,Beverages,Beverage,Hi5 Seltzer - THC - Watermelon - 4pk,BEVW5T80,77.0,1.28,PARTIAL,2027-09-17,REC,Theory
+Pick,Medford,(B) Vault - Finished Goods,vault,Beverages,Beverage,MED - HI5 Soda - THC (100mg) - Orange - 4pk,BEVSOO100T3,60.0,1.0,,2027-08-19,MED,Theory
+Pick,Medford,(B) Vault - Finished Goods,vault,Chocolates,Chocolate,Chocolate Bar - THEORYb - THC Caramel Gold - 20pk,CCHOC100T1,120.0,3.0,,2027-09-24,REC,Theory
+Pick,Medford,(B) Vault - Finished Goods,vault,Chocolates,Chocolate,MED - Chocolate Bar - 2000mg THC Milk Chocolate - 20pk,MCHOC2000T14,40.0,1.0,,2027-08-18,MED,Theory
+Pick,Medford,(B) Vault - Finished Goods,vault,Concentrates,1g Rosin,THEORYx Live Rosin 1g - Soap,SFSOAPLRO1,25.0,0.52,PARTIAL,2027-09-25,REC,Theory
+Pick,Medford,(B) Vault - Finished Goods,vault,Flower,14g Flower,Flower 14g - THEORYb - Bandaid Haze IX 3.0,BNDH.4B.08062026001442,30.0,2.0,,2027-09-04,REC,Theory
+Pick,Medford,(B) Vault - Finished Goods,vault,Flower,14g Preground/RYO,Pre-Ground Flower 14g - Gastro Pop,B-18503,90.0,6.0,,2027-08-05,REC,Theory
+Pick,Medford,(B) Vault - Finished Goods,vault,Flower,14g Preground/RYO,Pre-Ground Flower 14g - Maddfruit,B-18319,15.0,1.0,,2027-07-31,REC,Theory
+Pick,Medford,(B) Vault - Finished Goods,vault,Flower,28g Flower,Flower 28g - Farmer's Cut - Bandaid Haze IX 3.0,BNDH.4B.052126001269,15.0,1.0,,2027-05-28,REC,Theory
+Pick,Medford,(B) Vault - Finished Goods,vault,Flower,28g Flower,Flower 28g - THEORYb - Bandaid Haze IX 3.0,BNDH.4B.08062026001444,30.0,2.0,,2027-09-04,REC,Theory
+Pick,Medford,(B) Vault - Finished Goods,vault,Flower,3.5g Flower,Flower 3.5g - THEORYx - Irish Cannonball,IRCA.4A.051826001275,75.0,1.0,,2027-07-06,REC,Theory
+Pick,Medford,(B) Vault - Finished Goods,vault,Gummies,Gummies,Vegan Rosin Gummies - THC Sour Blue Raspberry - 10pk,LRCHEWSBR5T17,25.0,0.5,PARTIAL,2027-09-16,REC,Theory
+Pick,Medford,(B) Vault - Finished Goods,vault,Preroll Multipacks,14pk Multipack Preroll,Preroll 14pk (0.5g) - Falcon Berry,FABE.2B.061726001315,150.0,3.0,,2027-07-17,REC,Theory
+Pick,Medford,(B) Vault - Finished Goods,vault,Preroll Multipacks,14pk Multipack Preroll,Preroll 14pk (1g) - 3D,3DDD.2A.060126004667,25.0,1.0,,2027-07-13,REC,Theory
+Pick,Medford,(B) Vault - Finished Goods,vault,Preroll Multipacks,14pk Multipack Preroll,Preroll 14pk (1g) - Shrimp Scampi,SRMP.2A.060126001305,25.0,1.0,,2027-07-13,REC,Theory
+Pick,Medford,(B) Vault - Finished Goods,vault,Preroll Singles,.5g Preroll Singles,Preroll .5g - Mango Haze,MAHA.3A.41326004620,150.0,1.0,,2027-06-08,REC,Theory
+Pick,Medford,(B) Vault - Finished Goods,vault,Preroll Singles,.5g Preroll Singles,Preroll .5g - THEORYx - Sunset Sherbert BX1,SUSH.3A.061526001344,150.0,1.0,,2027-08-03,REC,Theory
+Pick,Medford,(B) Vault - Finished Goods,vault,Preroll Singles,.5g Preroll Singles,Preroll .5g - THEORYx - Sunshine Daydream BX1,SSDD.3A.061526004676,150.0,1.0,,2027-08-03,REC,Theory
+Pick,Medford,(B) Vault - Finished Goods,vault,Preroll Singles,1g Blunt Singles,Blunt Cone 1g - Headband x Triangle Kush,HBTK.5A.31126001120,50.0,1.0,,2027-05-12,REC,Theory
+Pick,Medford,(B) Vault - Finished Goods,vault,Preroll Singles,1g Blunt Singles,Blunt Cone 1g - THEORYx - Wedding Cake,WEDC.1A.062426001379,50.0,1.0,,2027-08-16,REC,Theory
+Pick,Medford,(B) Vault - Finished Goods,vault,Preroll Singles,1g Blunt Singles,Blunt Cone 1g - World Star,WOST.3B.51326001250,100.0,2.0,,2027-06-15,REC,Theory
+Pick,Medford,(B) Vault - Finished Goods,vault,Topical,Topical,RSO - Muscle Lotion - CBD (X),RSO-TOPIM1200C4,32.0,1.0,,2027-09-25,REC,Theory
+Pick,Medford,(D) Vault - Hold for Theory,vault,Gummies,Gummies,Layered Gummies - THC Pineapple - 10pk,CHEWDLPI5T11,50.0,1.0,,2027-04-06,REC,Theory
+Wholesale,Wholesale,(B) MIP Lab - Finished Goods,mip,Concentrates,1g BHO Concentrate,Sugar 1g - Lemon Fatman,PEBPLFATSU1,384.0,8.0,,2027-09-13,REC,Theory
+Wholesale,Wholesale,(B) Vault - Finished Goods,vault,Beverages,Beverage,HI5 Seltzer - THC - America - 4pk,BEVRP5T24,1440.0,24.0,,2027-10-01,REC,Theory
+Wholesale,Wholesale,(B) Vault - Finished Goods,vault,Beverages,Beverage,HI5 Seltzer - THC - Cranberry Lime - 4pk,BEVCL5T30,960.0,16.0,,,REC,Theory
+Wholesale,Wholesale,(B) Vault - Finished Goods,vault,Beverages,Beverage,MED - HI5 Seltzer - THC (25mg) - Black Cherry - 4pk,BEVBC25T27,240.0,4.0,,,MED,Theory
+Wholesale,Wholesale,(B) Vault - Finished Goods,vault,Beverages,Beverage,MED - HI5 Seltzer - THC (50mg) - Black Cherry - 4pk,BEVBC50T6,240.0,4.0,,2027-09-18,MED,Theory
+Wholesale,Wholesale,(B) Vault - Finished Goods,vault,Beverages,Beverage,MED - HI5 Seltzer - THC (50mg) - Cranberry Lime - 4pk,BEVCL50T4,240.0,4.0,,,MED,Theory
+Wholesale,Wholesale,(B) Vault - Finished Goods,vault,Chocolates,Chocolate,Chocolate Bar - THEORYb - 1:1 Milk Chocolate - 20pk,MCHOC200O15,40.0,1.0,,2027-09-13,REC,Theory
+Wholesale,Wholesale,(B) Vault - Finished Goods,vault,Chocolates,Chocolate,Chocolate Bar - THEORYb - THC Caramel Gold - 20pk,CCHOC100T1,120.0,3.0,,2027-09-24,REC,Theory
+Wholesale,Wholesale,(B) Vault - Finished Goods,vault,Chocolates,Chocolate,MED - Chocolate Bar - 2000mg THC Milk Chocolate - 20pk,MCHOC2000T14,40.0,1.0,,2027-08-18,MED,Theory
+Wholesale,Wholesale,(B) Vault - Finished Goods,vault,Gummies,Gummies,MED - THEORYb Gummies - THC Pineapple (100mg) - 20pk,CHEWPI100T45,50.0,1.0,,2027-09-16,MED,Theory
+Wholesale,Wholesale,(B) Vault - Finished Goods,vault,Gummies,Gummies,MED - THEORYb Gummies - THC Pineapple (100mg) - 20pk,CHEWPI100T46,50.0,1.0,,2027-09-25,MED,Theory
+Wholesale,Wholesale,(B) Vault - Finished Goods,vault,Preroll Multipacks,10pk Multipack Preroll,Preroll 10pk Minis - 3D,3DDD.2A.060126004667,36.0,1.0,,2027-07-13,REC,Theory
+Wholesale,Wholesale,(B) Vault - Finished Goods,vault,Preroll Multipacks,10pk Multipack Preroll,Preroll 10pk Minis - Sunshine Daydream BX1,SSDD.3A.061526004676,36.0,1.0,,2027-08-03,REC,Theory
+Wholesale,Wholesale,(B) Vault - Finished Goods,vault,Preroll Singles,.5g Preroll Singles,Preroll .5g - THEORYx - Sunset Sherbert BX1,SUSH.3A.061526001344,150.0,1.0,,2027-08-03,REC,Theory
+Wholesale,Wholesale,(B) Vault - Finished Goods,vault,Preroll Singles,.5g Preroll Singles,Preroll .5g - THEORYx - Sunshine Daydream BX1,SSDD.3A.061526004676,2700.0,18.0,,2027-08-03,REC,Theory
+Wholesale,Wholesale,(B) Vault - Finished Goods,vault,Preroll Singles,.5g Preroll Singles,Preroll .5g - Ultra - Dosidos,DOSI.3B.07152026001393,1200.0,8.0,,2027-08-23,REC,Theory
+Wholesale,Wholesale,(B) Vault - Finished Goods,vault,Preroll Singles,1g Blunt Singles,Blunt Cone 1g - THEORYx - Wedding Cake,WEDC.1A.062426001379,50.0,1.0,,2027-08-16,REC,Theory
+Wholesale,Wholesale,(B) Vault - Finished Goods,vault,Preroll Singles,1g Preroll Singles,Preroll 1g - THEORYx - Guava Haze,GUHA.4A.07202026001423,150.0,1.0,,2027-08-28,REC,Theory
+Wholesale,Wholesale,(B) Vault - Finished Goods,vault,Vape Cartridges,1ml THEORYb/Botanical Vape,Vape Product - EHO Distillate THEORYb Cartridge 1ml - Honeycrisp Haze,VP1HOHAD3,120.0,2.0,,2027-09-13,REC,Theory
+Wholesale,Wholesale,(B) Vault - Finished Goods,vault,Vape Cartridges,1ml THEORYb/Botanical Vape,Vape Product - EHO Distillate THEORYb Cartridge 1ml - Prickly Pear,VP1PRPED1,60.0,1.0,,2027-09-09,REC,Theory
+Unallocated,Vault (unplaced),(B) Vault - Finished Goods,vault,Beverage Enhancer,Beverage Enhancer,HI5 Beverage Enhancer - THC 1mg / CBN 1mg - Flavorless - 7.5ml,EMUL40CBN-3,550.0,11.0,,,REC,Theory
+Unallocated,Vault (unplaced),(B) Vault - Finished Goods,vault,Beverage Enhancer,Beverage Enhancer,Hi5 Beverage Enhancer - THC - Flavorless,EMUL20T-12,1250.0,25.0,,2027-04-07,REC,Theory
+Unallocated,Vault (unplaced),(B) Vault - Finished Goods,vault,Beverages,Beverage,Five Islands - THC - Classic - 4pk,BEVTC5T4,391.0,6.52,PARTIAL,2027-09-25,REC,Theory
+Unallocated,Vault (unplaced),(B) Vault - Finished Goods,vault,Beverages,Beverage,Five Islands - THC - Peach - 4pk,BEVTP5T6,266.0,4.43,PARTIAL,2027-09-21,REC,Theory
+Unallocated,Vault (unplaced),(B) Vault - Finished Goods,vault,Beverages,Beverage,Five Islands - THC - Raspberry - 4pk,BEVTR5T6,494.0,8.23,PARTIAL,2027-09-15,REC,Theory
+Unallocated,Vault (unplaced),(B) Vault - Finished Goods,vault,Beverages,Beverage,HI5 Seltzer - THC - America - 4pk,BEVRP5T24,221.0,3.68,PARTIAL,2027-10-01,REC,Theory
+Unallocated,Vault (unplaced),(B) Vault - Finished Goods,vault,Beverages,Beverage,HI5 Seltzer - THC - Black Cherry - 4pk,BEVBC5T103,26.0,0.43,PARTIAL,2027-08-25,REC,Theory
+Unallocated,Vault (unplaced),(B) Vault - Finished Goods,vault,Beverages,Beverage,HI5 Seltzer - THC - Black Cherry - 4pk,BEVBC5T104,120.0,2.0,,2027-09-08,REC,Theory
+Unallocated,Vault (unplaced),(B) Vault - Finished Goods,vault,Beverages,Beverage,HI5 Seltzer - THC - Lime - 4pk,BEVL5T95,120.0,2.0,,2027-09-13,REC,Theory
+Unallocated,Vault (unplaced),(B) Vault - Finished Goods,vault,Beverages,Beverage,HI5 Seltzer - THC - Pomegranate - 4pk,BEVP5T86,347.0,5.78,PARTIAL,2027-09-25,REC,Theory
+Unallocated,Vault (unplaced),(B) Vault - Finished Goods,vault,Beverages,Beverage,HI5 Soda - THC - Root Beer - 4pk,BEVSORB5T23,360.0,6.0,,2027-08-24,REC,Theory
+Unallocated,Vault (unplaced),(B) Vault - Finished Goods,vault,Beverages,Beverage,Hi5 Seltzer - THC - Watermelon - 4pk,BEVW5T80,240.0,4.0,,2027-09-17,REC,Theory
+Unallocated,Vault (unplaced),(B) Vault - Finished Goods,vault,Beverages,Beverage,MED - HI5 Seltzer - THC (100mg) - Pomegranate - 4pk,BEVP100T10,166.0,2.77,PARTIAL,2027-09-28,MED,Theory
+Unallocated,Vault (unplaced),(B) Vault - Finished Goods,vault,Beverages,Beverage,MED - HI5 Seltzer - THC (25mg) - Black Cherry - 4pk,BEVBC25T27,180.0,3.0,,,MED,Theory
+Unallocated,Vault (unplaced),(B) Vault - Finished Goods,vault,Beverages,Beverage,MED - HI5 Seltzer - THC (50mg) - Black Cherry - 4pk,BEVBC50T6,172.0,2.87,PARTIAL,2027-09-18,MED,Theory
+Unallocated,Vault (unplaced),(B) Vault - Finished Goods,vault,Beverages,Beverage,MED - HI5 Seltzer - THC (50mg) - Cranberry Lime - 4pk,BEVCL50T4,60.0,1.0,,,MED,Theory
+Unallocated,Vault (unplaced),(B) MIP Lab - Finished Goods,mip,Chocolates,Chocolate,Chocolate Bar - THEORYb - 1:1 Milk Chocolate - 20pk,MCHOC200O15,560.0,14.0,,2027-09-13,REC,Theory
+Unallocated,Vault (unplaced),(B) Vault - Finished Goods,vault,Chocolates,Chocolate,Chocolate Bar - THEORYb - THC Caramel Gold - 20pk,CCHOC100T1,240.0,6.0,,2027-09-24,REC,Theory
+Unallocated,Vault (unplaced),"(B) Vault - Finished Goods, (B) MIP Lab - Finished Goods",mip,Chocolates,Chocolate,Chocolate Bar - THEORYb - THC Kitchen Sink - 20pk,MCHOCKS100T23,440.0,11.0,,2027-09-16,REC,Theory
+Unallocated,Vault (unplaced),(B) Vault - Finished Goods,vault,Chocolates,Chocolate,MED - Chocolate Bar - 2000mg THC Dark Chocolate - 20pk,DCHOC2000T8,1067.0,26.68,PARTIAL,2027-09-22,MED,Theory
+Unallocated,Vault (unplaced),(B) MIP Lab - Finished Goods,mip,Concentrates,1g BHO Concentrate,Sugar 1g - Lemon Fatman,PEBPLFATSU1,23.0,0.48,PARTIAL,2027-09-13,REC,Theory
+Unallocated,Vault (unplaced),(B) Vault - Finished Goods,vault,Concentrates,1g Rosin,THEORYx Live Rosin 1g - Soap,SFSOAPLRO1,47.0,0.98,PARTIAL,2027-09-25,REC,Theory
+Unallocated,Vault (unplaced),(B) Vault - Finished Goods,vault,Flower,14g Flower,Flower 14g - THEORYb - Bandaid Haze IX 3.0,BNDH.4B.08062026001442,73.0,4.87,PARTIAL,2027-09-04,REC,Theory
+Unallocated,Vault (unplaced),(B) Vault - Finished Goods,vault,Flower,14g Preground/RYO,Pre-Ground Flower 14g - Gastro Pop,B-18503,10.0,0.67,PARTIAL,2027-08-05,REC,Theory
+Unallocated,Vault (unplaced),(B) Vault - Finished Goods,vault,Flower,14g Preground/RYO,Pre-Ground Flower 14g - Maddfruit,B-18319,35.0,2.33,PARTIAL,2027-07-31,REC,Theory
+Unallocated,Vault (unplaced),(B) Vault - Finished Goods,vault,Flower,28g Flower,Flower 28g - THEORYb - Bandaid Haze IX 3.0,BNDH.4B.08062026001442,145.0,9.67,PARTIAL,2027-09-04,REC,Theory
+Unallocated,Vault (unplaced),(B) Vault - Finished Goods,vault,Flower,28g Flower,Flower 28g - THEORYb - Bandaid Haze IX 3.0,BNDH.4B.08062026001444,75.0,5.0,,2027-09-04,REC,Theory
+Unallocated,Vault (unplaced),(B) Vault - Finished Goods,vault,Flower,3.5g Flower,Flower 3.5g - THEORYb - Bandaid Haze IX 3.0,BNDH.4B.08062026001443,1125.0,15.0,,2027-09-04,REC,Theory
+Unallocated,Vault (unplaced),(B) Vault - Finished Goods,vault,Flower,3.5g Flower,Flower 3.5g - THEORYb - Golden Tiger,GOLD.4B.08062026001458,300.0,4.0,,2027-09-18,REC,Theory
+Unallocated,Vault (unplaced),(B) Vault - Finished Goods,vault,Flower,3.5g Flower,Flower 3.5g - THEORYb - Poutine,POUTPH05.2A.08032026001469,692.0,9.23,PARTIAL,2027-09-18,REC,Theory
+Unallocated,Vault (unplaced),(B) Vault - Finished Goods,vault,Gummies,Gummies,FX Gummies - 1:1 Cherry Lime - 20pk,FXCHEWS10O41,500.0,10.0,,2027-09-18,REC,Theory
+Unallocated,Vault (unplaced),(B) Vault - Finished Goods,vault,Gummies,Gummies,FX Gummies - 1:1:1 Lemon Ginger - 20pk,FXCHEWR15O30,693.0,13.86,PARTIAL,2027-08-25,REC,Theory
+Unallocated,Vault (unplaced),(B) Vault - Finished Goods,vault,Gummies,Gummies,FX Gummies - 2:1 Navel Orange - 20pk,FXCHEWU7O24,350.0,7.0,,2027-06-21,REC,Theory
+Unallocated,Vault (unplaced),(B) Vault - Finished Goods,vault,Gummies,Gummies,Layered Gummies - THC Sour Watermelon - 10pk,CHEWDLSW5T13,424.0,8.48,PARTIAL,2027-08-12,REC,Theory
+Unallocated,Vault (unplaced),(B) Vault - Finished Goods,vault,Gummies,Gummies,MED - THEORYb Gummies - THC Blue Raspberry (Sativa) (100mg) - 20pk,SCHEWBR100T8,165.0,3.3,PARTIAL,2027-09-16,MED,Theory
+Unallocated,Vault (unplaced),(B) MIP Lab - Finished Goods,mip,Gummies,Gummies,MED - THEORYb Gummies - THC Blue Raspberry (Sativa) (100mg) - 20pk,SCHEWBR100T9,1266.0,25.32,PARTIAL,2027-09-27,MED,Theory
+Unallocated,Vault (unplaced),"(B) Vault - Finished Goods, (B) MIP Lab - Finished Goods",mip,Gummies,Gummies,MED - THEORYb Gummies - THC Pineapple (100mg) - 20pk,CHEWPI100T46,996.0,19.92,PARTIAL,2027-09-25,MED,Theory
+Unallocated,Vault (unplaced),(B) Vault - Finished Goods,vault,Gummies,Gummies,MED - THEORYb Gummies - THC Tropical Mango (Indica) (100mg) - 20pk,ICHEWTM100T6,769.0,15.38,PARTIAL,2027-09-25,MED,Theory
+Unallocated,Vault (unplaced),(B) Vault - Finished Goods,vault,Gummies,Gummies,THEORYb Gummies - 11mg (5:5:1) Nighttime CBN Blackberry - 20pk,CHEWBB11O30,250.0,5.0,,2027-08-14,REC,Theory
+Unallocated,Vault (unplaced),(B) Vault - Finished Goods,vault,Gummies,Gummies,THEORYb Gummies - 1:1 Grape - 20pk,CHEWP10O37,250.0,5.0,,2027-09-08,REC,Theory
+Unallocated,Vault (unplaced),(B) Vault - Finished Goods,vault,Gummies,Gummies,THEORYb Gummies - CBD Watermelon 25mg - 20pk,CHEWW25C17,250.0,5.0,,,REC,Theory
+Unallocated,Vault (unplaced),(B) MIP Lab - Finished Goods,mip,Gummies,Gummies,THEORYb Gummies - THC Mango - 20pk,CHEWM5T87,900.0,18.0,,2027-10-04,REC,Theory
+Unallocated,Vault (unplaced),(B) Vault - Finished Goods,vault,Gummies,Gummies,THEORYb Gummies - THC Mixed Berry (Indica) - 20pk,ICHEWMB5T17,300.0,6.0,,2027-08-11,REC,Theory
+Unallocated,Vault (unplaced),(B) Vault - Finished Goods,vault,Gummies,Gummies,THEORYb Gummies - THC Raspberry - 20pk,CHEWR5T49,608.0,12.16,PARTIAL,2027-09-13,REC,Theory
+Unallocated,Vault (unplaced),(B) Vault - Finished Goods,vault,Gummies,Gummies,Vegan Rosin Gummies - THC Sour Blue Raspberry - 10pk,LRCHEWSBR5T17,45.0,0.9,PARTIAL,2027-09-16,REC,Theory
+Unallocated,Vault (unplaced),(B) Vault - Finished Goods,vault,Gummies,Gummies,Vegan Rosin Gummies - THC Sour Strawberry - 10pk,LRCHEWSS5T16,75.0,1.5,PARTIAL,2027-08-30,REC,Theory
+Unallocated,Vault (unplaced),(B) Vault - Finished Goods,vault,Gummies,Gummies,Vegan Rosin Gummies - THC Sour Strawberry - 10pk,LRCHEWSS5T17,171.0,3.42,PARTIAL,2027-09-13,REC,Theory
+Unallocated,Vault (unplaced),(B) Vault - Finished Goods,vault,Preroll Multipacks,10pk Multipack Preroll,Preroll 10pk Minis - World Star,WOST.3B.51326001250,101.0,2.81,PARTIAL,2027-06-15,REC,Theory
+Unallocated,Vault (unplaced),(B) Vault - Finished Goods,vault,Preroll Multipacks,14pk Multipack Preroll,Preroll 14pk (0.5g) - Falcon Berry,FABE.2B.061726001315,134.0,2.68,PARTIAL,2027-07-17,REC,Theory
+Unallocated,Vault (unplaced),(B) Vault - Finished Goods,vault,Preroll Singles,.5g Preroll Singles,Preroll .5g - Mango Haze,MAHA.3A.41326004620,1186.0,7.91,PARTIAL,2027-06-08,REC,Theory
+Unallocated,Vault (unplaced),(B) Vault - Finished Goods,vault,Preroll Singles,.5g Preroll Singles,Preroll .5g - THEORYx - Sunset Sherbert BX1,SUSH.3A.061526001344,19.0,0.13,PARTIAL,2027-08-03,REC,Theory
+Unallocated,Vault (unplaced),(B) Vault - Finished Goods,vault,Preroll Singles,.5g Preroll Singles,Preroll .5g - Ultra - Dosidos,DOSI.3B.07152026001393,74.0,0.49,PARTIAL,2027-08-23,REC,Theory
+Unallocated,Vault (unplaced),(B) Vault - Finished Goods,vault,Preroll Singles,1g Blunt Singles,Blunt Cone 1g - Headband x Triangle Kush,HBTK.5A.31126001120,243.0,4.86,PARTIAL,2027-05-12,REC,Theory
+Unallocated,Vault (unplaced),(B) Vault - Finished Goods,vault,Preroll Singles,1g Blunt Singles,Blunt Cone 1g - THEORYx - Wedding Cake,WEDC.1A.062426001379,34.0,0.68,PARTIAL,2027-08-16,REC,Theory
+Unallocated,Vault (unplaced),(B) Vault - Finished Goods,vault,Preroll Singles,1g Blunt Singles,Blunt Cone 1g - World Star,WOST.3B.51326001250,12.0,0.24,PARTIAL,2027-06-15,REC,Theory
+Unallocated,Vault (unplaced),(B) Vault - Finished Goods,vault,Preroll Singles,1g Preroll Singles,Preroll 1g - 3D,3DDD.4A.12126002983,645.0,4.3,PARTIAL,2027-03-09,REC,Theory
+Unallocated,Vault (unplaced),(B) Vault - Finished Goods,vault,Preroll Singles,1g Preroll Singles,Preroll 1g - Greasy Runtz,GRRU.2A.112525002899,66.0,0.44,PARTIAL,2027-01-15,REC,Theory
+Unallocated,Vault (unplaced),(B) Vault - Finished Goods,vault,Preroll Singles,1g Preroll Singles,Preroll 1g - Greasy Runtz,GRRU.2A.112525002900,3425.0,22.83,PARTIAL,2027-01-15,REC,Theory
+Unallocated,Vault (unplaced),(B) Vault - Finished Goods,vault,Preroll Singles,1g Preroll Singles,Preroll 1g - Mango Haze,MAHA.2A.12726009138,1350.0,9.0,,2027-03-27,REC,Theory
+Unallocated,Vault (unplaced),(B) Vault - Finished Goods,vault,Preroll Singles,1g Preroll Singles,Preroll 1g - Mango Haze,MAHA.2A.12726009139,915.0,6.1,PARTIAL,2027-03-27,REC,Theory
+Unallocated,Vault (unplaced),(B) Vault - Finished Goods,vault,Preroll Singles,1g Preroll Singles,Preroll 1g - Mango Haze,MAHA.3A.41326004619,66.0,0.44,PARTIAL,2027-06-08,REC,Theory
+Unallocated,Vault (unplaced),(B) Vault - Finished Goods,vault,Preroll Singles,1g Preroll Singles,Preroll 1g - Old Dirty Biker,OLDB.1B.22426001060,537.0,3.58,PARTIAL,2027-04-03,REC,Theory
+Unallocated,Vault (unplaced),(B) Vault - Finished Goods,vault,Preroll Singles,1g Preroll Singles,Preroll 1g - Shrimp Scampi,SRMP.5A.010726002971,3289.0,21.93,PARTIAL,2027-02-25,REC,Theory
+Unallocated,Vault (unplaced),(B) Vault - Finished Goods,vault,Vape Cartridges,1ml High Potency Vape,Vape Product - EHO Distillate High Potency Cartridge 1ml - Grapeade,VP1GRAPD1,939.0,15.65,PARTIAL,2027-09-09,REC,Theory
+Unallocated,Vault (unplaced),(B) Vault - Finished Goods,vault,Vape Cartridges,1ml High Potency Vape,Vape Product - EHO Distillate High Potency Cartridge 1ml - Lemon Pound Cake,VP1LEPCD3,1020.0,17.0,,2027-09-09,REC,Theory
+Unallocated,Vault (unplaced),(B) Vault - Finished Goods,vault,Vape Cartridges,1ml High Potency Vape,Vape Product - EHO Distillate High Potency Cartridge 1ml - Pineapple Haze,VP1PIHAD2,1558.0,25.97,PARTIAL,2027-09-13,REC,Theory
+Unallocated,Vault (unplaced),(B) Vault - Finished Goods,vault,Vape Cartridges,1ml THEORYb/Botanical Vape,Vape Product - EHO Distillate THEORYb Cartridge 1ml - Honeycrisp Haze,VP1HOHAD3,180.0,3.0,,2027-09-13,REC,Theory
+Unallocated,Vault (unplaced),(B) Vault - Finished Goods,vault,Vape Cartridges,1ml THEORYb/Botanical Vape,Vape Product - EHO Distillate THEORYb Cartridge 1ml - Pixie Punch,VP1PIXPD3,425.0,7.08,PARTIAL,2027-08-07,REC,Theory
+Unallocated,Vault (unplaced),(B) Vault - Finished Goods,vault,Vape Cartridges,1ml THEORYb/Botanical Vape,Vape Product - EHO Distillate THEORYb Cartridge 1ml - Spearmint Swirl,VP1SPSWD3,665.0,11.08,PARTIAL,2027-08-09,REC,Theory
+Unallocated,Vault (unplaced),(D) Vault - Hold for Theory,vault,Beverages,Beverage,HI5 Seltzer - THC - Lime - 4pk,BEVL5T95,240.0,4.0,,2027-09-13,REC,Theory
+Unallocated,Vault (unplaced),(D) Vault - Hold for Theory,vault,Beverages,Beverage,MED - HI5 Seltzer - THC (100mg) - Pomegranate - 4pk,BEVP100T10,180.0,3.0,,2027-09-28,MED,Theory
+Unallocated,Vault (unplaced),(D) Vault - Hold for Theory,vault,Beverages,Beverage,MED - HI5 Seltzer - THC (25mg) - Peach Mango - 4pk,BEVPM25T29,420.0,7.0,,2027-08-15,MED,Theory
+Unallocated,Vault (unplaced),(D) Vault - Hold for Theory,vault,Beverages,Beverage,MED - HI5 Seltzer - THC (6mg) - Strawberry Margarita - 4pk,BEVSM5T25,540.0,9.0,,2027-05-24,MED,Theory
+Unallocated,Vault (unplaced),(D) Vault - Hold for Theory,vault,Chocolates,Chocolate,MED - Chocolate Piece - THC 100mg Dark Chocolate,DCHOCP100T3,200.0,5.0,,2027-01-19,MED,Theory
+Unallocated,Vault (unplaced),(D) Vault - Hold for Theory,vault,Gummies,Gummies,Vegan Rosin Gummies - THC Sour Strawberry - 10pk,LRCHEWSS5T13,75.0,1.5,PARTIAL,2027-03-30,REC,Theory
+Unallocated,Vault (unplaced),(D) Vault - Hold for Theory,vault,Preroll Singles,1g Preroll Singles,Preroll 1g - Mango Haze,MAHA.2A.12726009138,150.0,1.0,,2027-03-27,REC,Theory
