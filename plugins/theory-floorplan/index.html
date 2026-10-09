@@ -8,22 +8,22 @@
 <style>
   *{box-sizing:border-box;margin:0;padding:0}
   html,body{height:100%}
-  body{font-family:-apple-system,BlinkMacSystemFont,Inter,Segoe UI,Roboto,Arial,sans-serif;background:transparent;color:#1b1f24;overflow:hidden}
+  body{font-family:-apple-system,BlinkMacSystemFont,Inter,Segoe UI,Roboto,Arial,sans-serif;background:transparent;color:#f2f2f2;overflow:hidden}
   #wrap{height:100%;width:100%;display:flex;flex-direction:column;padding:10px 14px;gap:8px}
   #top{display:flex;justify-content:space-between;align-items:center;gap:8px;flex:0 0 auto;flex-wrap:wrap}
-  #ttl{font-size:13px;font-weight:800;letter-spacing:.05em;text-transform:uppercase;color:#2F6FE4}
-  #meta{font-size:11px;color:#667085} #meta b{color:#1b1f24}
-  .seg{display:inline-flex;border:1px solid #d0d5dd;border-radius:8px;overflow:hidden;margin-left:6px}
-  .seg button{border:0;background:#fff;color:#1b1f24;font:inherit;font-size:11px;padding:4px 9px;cursor:pointer}
-  .seg button.on{background:#2F6FE4;color:#fff}
+  #ttl{font-size:13px;font-weight:800;letter-spacing:.05em;text-transform:uppercase;color:#D97459}
+  #meta{font-size:11px;color:#9a9a9a} #meta b{color:#fff}
+  .seg{display:inline-flex;border:1px solid #3a3a3a;border-radius:8px;overflow:hidden;margin-left:6px}
+  .seg button{border:0;background:#0f0f10;color:#f2f2f2;font:inherit;font-size:11px;padding:4px 9px;cursor:pointer}
+  .seg button.on{background:#D97459;color:#fff}
   #main{flex:1;min-height:0;display:flex;gap:10px}
   #stage{flex:1 1 62%;min-width:0;min-height:0}
   #plan{width:100%;height:100%;display:block}
-  #side{flex:0 0 34%;min-width:170px;overflow:auto;font-size:12px;border-left:1px solid #e4e7ec;padding-left:10px}
-  #side h3{font-size:13px;margin-bottom:2px} #side .sub{color:#667085;margin-bottom:6px}
+  #side{flex:0 0 34%;min-width:170px;overflow:auto;font-size:12px;border-left:1px solid #2a2a2a;padding-left:10px}
+  #side h3{font-size:13px;margin-bottom:2px} #side .sub{color:#9a9a9a;margin-bottom:6px}
   .row{display:grid;grid-template-columns:96px 1fr 48px;gap:6px;align-items:center;margin:3px 0}
-  .row i{display:block;height:7px;border-radius:4px;background:#2F6FE4}
-  .row .t{background:#e4e7ec;height:7px;border-radius:4px}
+  .row i{display:block;height:7px;border-radius:4px;background:#D97459}
+  .row .t{background:#2a2a2a;height:7px;border-radius:4px}
   .row b{text-align:right;font-weight:600}
   .zone{cursor:pointer;outline:none}
   .zone rect,.zone polygon{stroke:#2c2c2c;stroke-width:2}
@@ -31,8 +31,8 @@
   .zone.sel rect,.zone.sel polygon{stroke:#e11d48;stroke-width:5}
   .zl{font-size:17px;fill:#1b1f24;pointer-events:none} .zv{font-size:20px;font-weight:700;fill:#1b1f24;pointer-events:none}
   .lt{fill:#fff}
-  #tip{position:fixed;pointer-events:none;background:#1b1f24;border-radius:8px;padding:6px 9px;font-size:11px;color:#fff;opacity:0;z-index:10;white-space:nowrap}
-  @media (max-width:560px){#main{flex-direction:column}#side{flex:0 0 38%;border-left:0;padding-left:0;border-top:1px solid #e4e7ec;padding-top:6px}}
+  #tip{position:fixed;pointer-events:none;background:#D97459;border-radius:8px;padding:6px 9px;font-size:11px;color:#000;opacity:0;z-index:10;white-space:nowrap}
+  @media (max-width:560px){#main{flex-direction:column}#side{flex:0 0 38%;border-left:0;padding-left:0;border-top:1px solid #2a2a2a;padding-top:6px}}
 </style>
 </head>
 <body>
@@ -74,7 +74,7 @@
   }
   function el(n,a,p){var e=document.createElementNS(NS,n);for(var k in a)e.setAttribute(k,a[k]);if(p)p.appendChild(e);return e;}
   function fmt(v){return Math.round(v).toLocaleString();}
-  function ramp(v,max){ if(!v)return null; var t=Math.min(1,Math.sqrt(v/max)); return 'hsl(221 80% '+(92-t*52)+'%)'; }
+  function ramp(v,max){ if(!v)return null; var t=Math.min(1,Math.sqrt(v/max)); return 'hsl(14 62% '+(90-t*38)+'%)'; }
   var tip=document.getElementById('tip');
 
   var st={cfg:{},data:null,unsub:null,rows:null,section:'All',mode:'heat',sel:null,synthetic:true};
@@ -112,7 +112,7 @@
     var T=totals(), svg=document.getElementById('plan'); svg.innerHTML='';
     var defsEl=el('defs',{},svg), mk=el('marker',{id:'ar',viewBox:'0 0 10 10',refX:8,refY:5,markerWidth:14,markerHeight:14,markerUnits:'userSpaceOnUse',orient:'auto'},defsEl);
     el('path',{d:'M0 0 L10 5 L0 10 z',fill:'#8a4fb5'},mk);
-    el('rect',{x:330,y:236,width:1085,height:1020,fill:'#f7f8fa',stroke:'#333','stroke-width':3},svg);
+    el('rect',{x:330,y:236,width:1085,height:1020,fill:'#f4f1ee',stroke:'#333','stroke-width':3},svg);
     var max=1; for(var k in T.t) if(T.t[k]>max)max=T.t[k];
     ZONES.forEach(function(z){
       var v=T.t[z.id]||0, fill=(st.mode==='heat'&&ramp(v,max))||AREA[z.type];
