@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Allocation Floor Plan — Theory Sigma Plugin</title>
+<script src="https://unpkg.com/@sigmacomputing/plugin"></script>
+<style>
+  *{box-sizing:border-box;margin:0;padding:0}
+  html,body{height:100%}
+  body{font-family:-apple-system,BlinkMacSystemFont,Inter,Segoe UI,Roboto,Arial,sans-serif;background:transparent;color:#1b1f24;overflow:hidden}
+  #wrap{height:100%;width:100%;display:flex;flex-direction:column;padding:10px 14px;gap:8px}
+  #top{display:flex;justify-content:space-between;align-items:center;gap:8px;flex:0 0 auto;flex-wrap:wrap}
+  #ttl{font-size:13px;font-weight:800;letter-spacing:.05em;text-transform:uppercase;color:#2F6FE4}
+  #meta{font-size:11px;color:#667085} #meta b{color:#1b1f24}
+  .seg{display:inline-flex;border:1px solid #d0d5dd;border-radius:8px;overflow:hidden;margin-left:6px}
+  .seg button{border:0;background:#fff;color:#1b1f24;font:inherit;font-size:11px;padding:4px 9px;cursor:pointer}
+  .seg button.on{background:#2F6FE4;color:#fff}
+  #main{flex:1;min-height:0;display:flex;gap:10px}
+  #stage{flex:1 1 62%;min-width:0;min-height:0}
+  #plan{width:100%;height:100%;display:block}
+  #side{flex:0 0 34%;min-width:170px;overflow:auto;font-size:12px;border-left:1px solid #e4e7ec;padding-left:10px}
+  #side h3{font-size:13px;margin-bottom:2px} #side .sub{color:#667085;margin-bottom:6px}
+  .row{display:grid;grid-template-columns:96px 1fr 48px;gap:6px;align-items:center;margin:3px 0}
+  .row i{display:block;height:7px;border-radius:4px;background:#2F6FE4}
+  .row .t{background:#e4e7ec;height:7px;border-radius:4px}
+  .row b{text-align:right;font-weight:600}
+  .zone{cursor:pointer;outline:none}
+  .zone rect,.zone polygon{stroke:#2c2c2c;stroke-width:2}
+  .zone:hover rect,.zone:hover polygon{filter:brightness(.94)}
+  .zone.sel rect,.zone.sel polygon{stroke:#e11d48;stroke-width:5}
+  .zl{font-size:17px;fill:#1b1f24;pointer-events:none} .zv{font-size:20px;font-weight:700;fill:#1b1f24;pointer-events:none}
+  .lt{fill:#fff}
+  #tip{position:fixed;pointer-events:none;background:#1b1f24;border-radius:8px;padding:6px 9px;font-size:11px;color:#fff;opacity:0;z-index:10;white-space:nowrap}
+  @media (max-width:560px){#main{flex-direction:column}#side{flex:0 0 38%;border-left:0;padding-left:0;border-top:1px solid #e4e7ec;padding-top:6px}}
+</style>
+</head>
+<body>
+<div id="wrap">
+  <div id="top">
+    <div><span id="ttl">Allocation floor plan</span> <span id="meta"><b id="tot">—</b> units · <b id="nz">—</b> rooms with stock</span></div>
+    <div><span class="seg" id="secSeg"></span><span class="seg" id="modeSeg"><button data-m="heat" class="on">Heat</button><button data-m="area">Areas</button></span></div>
+  </div>
+  <div id="main"><div id="stage"><svg id="plan" xmlns="http://www.w3.org/2000/svg" viewBox="__VIEWBOX__"></svg></div><div id="side"></div></div>
+</div>
+<div id="tip"></div>
+<script>
+(function(){
+  var client=(window.sigmaComputing&&window.sigmaComputing.plugin&&window.sigmaComputing.plugin.client)||null;
+  var NS='http://www.w3.org/2000/svg';
+  var ZONES=__ZONES__;
+  var AREA=__AREA__;
+  var EXITS=__EXITS__;
+  var ESCAPE=__ESCAPE__;
+
+  var defs=[
+    {name:'source',type:'element'},
+    {name:'room',type:'column',source:'source',label:'Source room / zone'},
+    {name:'units',type:'column',source:'source',allowedTypes:['number','integer'],label:'Units'},
+    {name:'section',type:'column',source:'source',label:'Section (Pick / Wholesale / Unallocated)'},
+    {name:'category',type:'column',source:'source',label:'Category'},
+    {name:'selectedZone',type:'variable',label:'Selected zone (text control)'},
+    {name:'onZoneSelect',type:'action-trigger',label:'On zone select'},
+    {name:'zoneMap',type:'text',label:'Room -> zone overrides (JSON)',defaultValue:'{}'}
+  ];
+  if(client) client.config.configureEditorPanel(defs);
+
+  function zoneOf(room,map){
+    var r=String(room==null?'':room).toLowerCase();
+    if(map[r]) return map[r];
+    var best=null,len=0;
+    ZONES.forEach(function(z){(z.aliases||[]).forEach(function(a){ if(r.indexOf(a)>=0&&a.length>len){best=z.id;len=a.length;} });});
+    return best;
+  }
+  function el(n,a,p){var e=document.createElementNS(NS,n);for(var k in a)e.setAttribute(k,a[k]);if(p)p.appendChild(e);return e;}
+  function fmt(v){return Math.round(v).toLocaleString();}
+  function ramp(v,max){ if(!v)return null; var t=Math.min(1,Math.sqrt(v/max)); return 'hsl(221 80% '+(92-t*52)+'%)'; }
+  var tip=document.getElementById('tip');
+
+  var st={cfg:{},data:null,unsub:null,rows:null,section:'All',mode:'heat',sel:null,synthetic:true};
+
+  // rows: {zone, section, category, units}
+  function synth(){
+    // deterministic sample shaped like the real run: most units in Vault / MIP Lab
+    var rooms=['vault','vault','vault','mip','mip','extraction','seltzer','msp11','msp10','msp9','cage','warehouse','retail'];
+    var cats=['Vapes','Gummies','Beverages','Flower','Preroll','Concentrates'], secs=['Pick','Wholesale','Unallocated'], out=[];
+    for(var i=0;i<120;i++) out.push({zone:rooms[i%rooms.length],section:secs[i%3],category:cats[(i*5)%cats.length],units:20+(i*37)%380});
+    return out;
+  }
+  function build(){
+    var c=st.cfg||{},d=st.data,map={};
+    try{map=JSON.parse(c.zoneMap||'{}');}catch(e){}
+    if(d&&c.room&&c.units&&d[c.units]){
+      var room=d[c.room]||[],u=d[c.units]||[],sec=c.section?d[c.section]:null,cat=c.category?d[c.category]:null,rows=[];
+      for(var i=0;i<u.length;i++){ var z=zoneOf(room[i],map); rows.push({zone:z,section:sec?String(sec[i]):'All',category:cat?String(cat[i]):'—',units:Number(u[i])||0}); }
+      st.rows=rows; st.synthetic=false;
+    } else { st.rows=synth(); st.synthetic=true; }
+  }
+  function totals(){
+    var t={},sum=0,secs={};
+    st.rows.forEach(function(r){ secs[r.section]=1; if(st.section!=='All'&&r.section!==st.section)return; if(!r.zone)return; t[r.zone]=(t[r.zone]||0)+r.units; sum+=r.units; });
+    return {t:t,sum:sum,secs:Object.keys(secs).sort()};
+  }
+  function select(id){
+    st.sel=(st.sel===id)?null:id; draw();
+    if(!client) return;
+    var c=st.cfg||{};
+    try{ if(c.selectedZone){ var z=ZONES.filter(function(z){return z.id===st.sel;})[0]; client.setVariable(c.selectedZone, z?z.name:''); }
+         if(c.onZoneSelect) client.triggerAction(c.onZoneSelect); }catch(e){}
+  }
+  function draw(){
+    var T=totals(), svg=document.getElementById('plan'); svg.innerHTML='';
+    var defsEl=el('defs',{},svg), mk=el('marker',{id:'ar',viewBox:'0 0 10 10',refX:8,refY:5,markerWidth:14,markerHeight:14,markerUnits:'userSpaceOnUse',orient:'auto'},defsEl);
+    el('path',{d:'M0 0 L10 5 L0 10 z',fill:'#8a4fb5'},mk);
+    el('rect',{x:330,y:236,width:1085,height:1020,fill:'#f7f8fa',stroke:'#333','stroke-width':3},svg);
+    var max=1; for(var k in T.t) if(T.t[k]>max)max=T.t[k];
+    ZONES.forEach(function(z){
+      var v=T.t[z.id]||0, fill=(st.mode==='heat'&&ramp(v,max))||AREA[z.type];
+      var g=el('g',{'class':'zone'+(st.sel===z.id?' sel':''),tabindex:0,role:'button','aria-label':z.name+' '+(v?fmt(v)+' units':'no data')},svg), shp;
+      if(z.poly) shp=el('polygon',{points:z.poly.join(' '),fill:fill},g); else shp=el('rect',{x:z.rect[0],y:z.rect[1],width:z.rect[2],height:z.rect[3],fill:fill},g);
+      var cx=z.rect?z.rect[0]+z.rect[2]/2:z.label[0], cy=z.rect?z.rect[1]+z.rect[3]/2:z.label[1];
+      var tall=z.rect&&z.rect[3]>z.rect[2]*2, dark=st.mode==='heat'&&v/max>0.35, tr=tall?'rotate(-90 '+cx+' '+cy+')':null;
+      var t1=el('text',{x:cx,y:cy-(v?8:0),'text-anchor':'middle','class':'zl'+(dark?' lt':'')},g); t1.textContent=z.name.replace(/ #\d+$/,''); if(tr)t1.setAttribute('transform',tr);
+      if(v){ var t2=el('text',{x:cx,y:cy+16,'text-anchor':'middle','class':'zv'+(dark?' lt':'')},g); t2.textContent=fmt(v); if(tr)t2.setAttribute('transform',tr); }
+      g.addEventListener('click',function(){select(z.id);});
+      g.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' ')select(z.id);});
+      g.addEventListener('mousemove',function(e){tip.style.opacity=1;tip.style.left=(e.clientX+12)+'px';tip.style.top=(e.clientY+12)+'px';tip.textContent=z.name+' — '+(v?fmt(v)+' units':'no data');});
+      g.addEventListener('mouseleave',function(){tip.style.opacity=0;});
+    });
+    ESCAPE.forEach(function(l){ el('line',{x1:l[0],y1:l[1],x2:l[2],y2:l[3],stroke:'#8a4fb5','stroke-width':5,'stroke-opacity':.5,'marker-end':'url(#ar)','pointer-events':'none'},svg); });
+    EXITS.forEach(function(e){ var t=el('text',{x:e.x,y:e.y,'text-anchor':'middle',fill:'#c0262d','font-size':17},svg); t.textContent=e.name; });
+    var n=0; for(var k2 in T.t) if(T.t[k2]>0)n++;
+    document.getElementById('tot').textContent=fmt(T.sum); document.getElementById('nz').textContent=n;
+    // section buttons
+    var seg=document.getElementById('secSeg'); seg.innerHTML='';
+    ['All'].concat(T.secs.filter(function(s){return s!=='All';})).forEach(function(s){
+      var b=document.createElement('button'); b.textContent=s; if(st.section===s)b.className='on'; b.onclick=function(){st.section=s;draw();}; seg.appendChild(b); });
+    // side panel
+    var side=document.getElementById('side'), z=ZONES.filter(function(z){return z.id===st.sel;})[0];
+    if(!z){ side.innerHTML='<h3>Top rooms</h3><div class="sub">'+(st.synthetic?'Sample data — bind a source in the editor panel. ':'')+'Click a room for its categories.</div>';
+      ZONES.filter(function(z){return T.t[z.id];}).sort(function(a,b){return T.t[b.id]-T.t[a.id];}).slice(0,8).forEach(function(z){ row(side,z.name,T.t[z.id],T.t[ZONES.filter(function(q){return T.t[q.id];}).sort(function(a,b){return T.t[b.id]-T.t[a.id];})[0].id]); });
+    } else {
+      var by={}; st.rows.forEach(function(r){ if(r.zone!==z.id)return; if(st.section!=='All'&&r.section!==st.section)return; by[r.category]=(by[r.category]||0)+r.units; });
+      var ks=Object.keys(by).sort(function(a,b){return by[b]-by[a];});
+      side.innerHTML='<h3>'+z.name+'</h3><div class="sub">'+fmt(T.t[z.id]||0)+' units</div>';
+      ks.forEach(function(k){ row(side,k,by[k],by[ks[0]]); });
+      if(!ks.length) side.innerHTML+='<div class="sub">No allocation lines in this room.</div>';
+    }
+  }
+  function row(p,label,v,max){ var d=document.createElement('div'); d.className='row'; d.innerHTML='<span>'+label+'</span><div class="t"><i style="width:'+(max?v/max*100:0)+'%"></i></div><b>'+fmt(v)+'</b>'; p.appendChild(d); }
+  document.getElementById('modeSeg').addEventListener('click',function(e){ var m=e.target.getAttribute&&e.target.getAttribute('data-m'); if(!m)return; st.mode=m;
+    [].forEach.call(this.children,function(b){b.className=b.getAttribute('data-m')===m?'on':'';}); draw(); });
+  function refresh(){ build(); draw(); }
+  if(window.ResizeObserver) new ResizeObserver(function(){}).observe(document.getElementById('stage')); // svg scales via viewBox; observer keeps layout live
+  if(client){ client.config.subscribe(function(cfg){ st.cfg=cfg||{};
+    if(st.unsub){st.unsub();st.unsub=null;}
+    if(cfg&&cfg.source){ st.unsub=client.elements.subscribeToElementData(cfg.source,function(dd){ st.data=dd; refresh(); }); }
+    refresh(); });
+  } else { refresh(); }
+})();
+</script>
+</body>
+</html>
