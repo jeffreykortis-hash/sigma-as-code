@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import os
 import requests
+import yaml
 
 from .auth import get_access_token_from_env
 
@@ -14,7 +15,8 @@ def get_workbook_spec(
 ) -> str:
     """Return the code representation (YAML) of a Sigma workbook.
 
-    Calls GET /v2/workbooks/{workbookId}/spec and returns the raw spec text.
+    Calls the GA workbook endpoint with includeContents=true and returns only
+    the workbook representation, not the surrounding metadata.
 
     Args:
         workbook_id: The Sigma workbook ID.
@@ -28,8 +30,13 @@ def get_workbook_spec(
     bearer = token or get_access_token_from_env(url)
 
     resp = requests.get(
-        f"{url}/v2/workbooks/{workbook_id}/spec",
+        f"{url.rstrip('/')}/v2/workbooks/{workbook_id}",
+        params={"includeContents": "true"},
         headers={"Authorization": f"Bearer {bearer}"},
     )
     resp.raise_for_status()
-    return resp.text
+    payload = resp.json()
+    contents = payload.get("contents") if isinstance(payload, dict) else None
+    if not isinstance(contents, dict):
+        raise ValueError("Sigma API response did not contain a workbook representation")
+    return yaml.safe_dump(contents, sort_keys=False, allow_unicode=True)
