@@ -54,6 +54,8 @@ Sigma API connection verified.
 
 ### Fetch a workbook spec
 
+The script uses Sigma's GA workbook API and outputs only the workbook specification as YAML, without the surrounding workbook metadata.
+
 Print to stdout:
 
 ```bash
@@ -79,6 +81,12 @@ from sigma_as_code import get_workbook_spec
 
 spec = get_workbook_spec("Cold-Provisions-Storefront-HMKejrba5skgSksfrFKAL")
 print(spec)
+```
+
+## Tests
+
+```bash
+python -m unittest discover -s tests -v
 ```
 
 ## Environment variables
